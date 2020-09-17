@@ -10,15 +10,15 @@ Follow the instructions line-by-line.
 ==========
 1. Open a new terminal window.
 ----------
-
+mkdir
 ==========
 2. Create a directory called mtec1003.
 ----------
-
+mkdir -p mtec1003
 ==========
 3. Change your directory so that you're in mtec1003.
 ----------
-
+cd mtec1003
 ==========
 4. Type:
 
@@ -30,7 +30,7 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/home/franklin/mtec1003
 
 
 ==========
@@ -41,7 +41,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+Desktop    Downloads  Music     animals  folder2   pizza
+Documents  Movies     Pictures  folder1  mtec1003  textfile.txt
 
 
 ==========
@@ -52,7 +53,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+Desktop    Downloads  Music     animals  folder2  mtec1003  textfile.txt
+Documents  Movies     Pictures  folder1  food     pizza
 
 
 ==========
@@ -63,7 +65,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+Desktop    Downloads  Music     animals  folder2  food      pizza
+Documents  Movies     Pictures  folder1  foo      mtec1003  textfile.txt
 
 
 ==========
@@ -74,7 +77,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/home/franklin/foo/bar/baz/qux
 
 
 ==========
@@ -85,7 +88,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/home/franklin/foo/bar
 
 
 ==========
@@ -96,7 +99,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/home/franklin/foo/bar/baz/qux
 
  
 ==========
@@ -107,7 +110,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/home/franklin
 
 
 ==========
@@ -119,7 +122,36 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
+total 0
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Desktop
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Documents
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Downloads
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Movies
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Music
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Pictures
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:51 animals
+drwxrwxrwx 1 franklin franklin 4096 Sep  2 18:37 folder1
+drwxrwxrwx 1 franklin franklin 4096 Sep  2 18:37 folder2
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:52 foo
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:51 food
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:51 mtec1003
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:39 pizza
+-rw-r--r-- 1 franklin franklin    0 Sep  9 18:19 textfile.txt
 
+total 0
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Desktop
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Documents
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Downloads
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Movies
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Music
+drwxr-xr-x 1 franklin franklin 4096 Sep  9 18:19 Pictures
+drwxrwxrwx 1 franklin franklin 4096 Sep  2 18:37 folder1
+drwxrwxrwx 1 franklin franklin 4096 Sep  2 18:37 folder2
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:52 foo
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:51 food
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:51 mtec1003
+drwxr-xr-x 1 franklin franklin 4096 Sep 16 19:39 pizza
+-rw-r--r-- 1 franklin franklin    0 Sep  9 18:19 textfile.txt
 
 
 ==========
@@ -130,7 +162,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/home/franklin
 
 
 ==========
@@ -141,7 +173,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/mnt
 
 
 ==========
@@ -152,8 +184,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+bash: cd: /unknown_folder: No such file or directory
 
-
+/home/franklin
 
 ==========
 15. Type:
@@ -163,13 +196,13 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/home/franklin/mtec1003
 
 
 ==========
 16a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
+pwd 
 
 
 ==========
@@ -192,7 +225,7 @@ lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+mkdir -p mtec1003/pineapple/orange/strawbery/lemon
 
 
 ==========
@@ -200,7 +233,7 @@ Use only one command to make all of these new directories.  Write what command y
 
 Write the command you used to create the directory below:
 ----------
-
+mkdir -p aardvark
 
 
 ==========
@@ -208,7 +241,7 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
-
+ls -l -a -t aardvark
 
 
 ==========
@@ -220,7 +253,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+cd foo/bar/baz
 
 
 ==========
@@ -228,7 +261,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd foo/bar/baz
 
 
 ==========
@@ -236,44 +269,45 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd ../..
 
 ==========
 23. What command is used to delete empty directories?
 ----------
-
+rmdir
 
 
 ==========
 24. What command is used to print out your current working directory?
 ----------
-
+pwd
 
 
 ==========
 25. What flag do I pass to ls to print out all files?
 ----------
-
+-a
 
 
 ==========
 26. What's the shortcut for home directory?
 ----------
-
+cd
 
 
 ==========
 27. What's a pathname?
 ----------
-
+A statement of the location of a file
 
 
 ==========
 28. What's a directory?
 ----------
-
+A directory is a location for storing files
 
 
 ==========
 29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+cd Downloads
